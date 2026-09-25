@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diya Maisuria</title>
+<meta name="description" content="Diya Maisuria: biomedical engineering student at Wayne State University and undergraduate researcher in biomaterials and neural tissue engineering.">
+<meta property="og:title" content="Diya Maisuria">
+<meta property="og:description" content="Biomedical engineering at Wayne State. Biomaterials & neural tissue engineering research.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='5' fill='%23d1406a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="print" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div class="marks" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<main class="page">
+  <header class="top mono">
+    <span>D.M. <span class="dim">/ Biomedical Engineering</span></span>
+    <span>Windsor, ON <span class="dim">&rarr;</span> Detroit, MI <span class="dim">&middot;</span> <time id="clock"></time></span>
+  </header>
+
+  <section class="hero">
+    <h1 class="sr-only">Diya Maisuria</h1>
+    <div id="stage" class="stage"></div>
+  </section>
+
+  <section class="intro">
+    <p class="lede reveal" style="--d:0">I study biomedical engineering at Wayne State University and work as an undergraduate researcher in the <em>Biomaterials &amp; Neural Tissue Engineering Lab</em>. Most days I&rsquo;m somewhere between the cell culture hood, MATLAB, and a CAD model.</p>
+    <p class="caption mono reveal" style="--d:1">Fig. 1 &mdash; Name, bioprinted. 6 layers, 0/90&deg; lattice, 22G needle, crosslinked at 405&nbsp;nm. <button id="reprint" type="button">Reprint &#8635;</button></p>
+  </section>
+
+  <section class="spec">
+    <div class="col reveal" style="--d:2">
+      <h2 class="label mono">01 &nbsp;Study</h2>
+      <p class="title">B.Eng., Biomedical Engineering</p>
+      <p class="detail">Wayne State University <span class="mono date">2025&ndash;now</span></p>
+      <p class="gpa"><span class="num">4.0</span><span class="mono">GPA</span></p>
+      <p class="detail small">Vincent Massey Secondary School, Windsor <span class="mono date">2021&ndash;25</span></p>
+    </div>
+    <div class="col reveal" style="--d:3">
+      <h2 class="label mono">02 &nbsp;Research</h2>
+      <p class="title">Undergraduate Research Assistant</p>
+      <p class="detail">Biomaterials &amp; Neural Tissue Engineering Lab, Wayne State <span class="mono date">May 2026&ndash;now</span></p>
+      <p class="detail small">Cell culture, data analysis, and the day-to-day of a working wet lab. On-site in Detroit.</p>
+    </div>
+    <div class="col reveal" style="--d:4">
+      <h2 class="label mono">03 &nbsp;Toolkit</h2>
+      <p class="title">MATLAB, CAD, cell culture, data analysis, design</p>
+      <p class="detail">MATLAB Onramp <span class="dim">&middot; MathWorks</span> <span class="mono date">2026</span></p>
+      <p class="detail">Standard First Aid &amp; CPR C <span class="dim">&middot; Lifesaving Society</span></p>
+    </div>
+    <div class="col reveal" style="--d:5">
+      <h2 class="label mono">04 &nbsp;Community</h2>
+      <p class="title">Chartwell Retirement Residences</p>
+      <p class="detail small">Planned and led activities for residents, went on walks with them, helped staff where needed. <span class="mono date">2024&ndash;25</span></p>
+      <p class="title">Hindu Temple &amp; Cultural Center</p>
+      <p class="detail small">Looked after the temple library: lending, returns, visitors. <span class="mono date">2023</span></p>
+    </div>
+  </section>
+
+  <footer class="foot mono reveal" style="--d:6">
+    <!-- Contact: add real links, then uncomment.
+    <span><a href="mailto:EMAIL">Email</a> <span class="dim">&middot;</span> <a href="LINKEDIN_URL">LinkedIn</a></span>
+    -->
+    <span>Diya Maisuria <span class="dim">&copy; 2026</span></span>
+    <span class="dim hint">Click anywhere</span>
+  </footer>
+</main>
+
+<div id="hud" class="hud mono" aria-hidden="true"><span id="hud-l"></span><span id="hud-r"></span></div>
+
+<div id="rail-x" class="rail rail-x" aria-hidden="true"></div>
+<div id="rail-y" class="rail rail-y" aria-hidden="true"></div>
+<div id="cursor" class="cursor" aria-hidden="true">
+  <svg viewBox="-12 -12 24 24" width="24" height="24"><path d="M-11 0H-4M4 0H11M0-11V-4M0 4V11" stroke="currentColor" stroke-width="1.2" fill="none"/><circle r="1.3" fill="currentColor"/></svg>
+  <span id="coords" class="mono"></span>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
